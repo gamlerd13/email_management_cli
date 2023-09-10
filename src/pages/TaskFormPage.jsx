@@ -1,4 +1,5 @@
-import { Navigate } from "react-router-dom"
+import { Link } from "react-router-dom"
+import { BtnLink } from "../components/BtnLink"
 
 export const TaskFormPage = () => {
   return (
@@ -11,8 +12,11 @@ export const TaskFormPage = () => {
         <hr />
         <input type="text" id="description" placeholder="Digite Descripcion"/>Descripción
     </form>
+    <Link to="/task"><BtnLink value="Task"/></Link>
 
 
+
+    
     </>
   )
 }
